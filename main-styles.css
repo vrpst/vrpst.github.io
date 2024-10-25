@@ -1,0 +1,82 @@
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
+    background-color: #003333; /*#6f9076;*/
+    font-size: 10;
+    color: #c5d3c8;
+    background-image: url(octo.png);
+    background-size: 5%;
+    background-position: top left;
+    background-repeat: repeat;
+}
+
+
+h1{
+    font-size: 60px;
+    padding-top: 10px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+li{
+    line-height: 20px;
+    list-style-type: square;
+}
+
+
+a{
+    color: #c5d3c8
+}
+
+
+#title{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#first-para{  /* make text and image next to each other */
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    float: top
+}
+
+#intro{
+    float: left;
+    padding: 12px;
+    width: 75%;
+}
+
+#theo{
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    top: 30px;
+    width: 15%
+}
+
+#theo-img{
+    float: top;
+    width: 90%;
+    border: 1px solid #000000;
+
+}
+
+#theo-caption{
+    font-size: 13px;
+    font-style: italic;
+    clear: both;
+    float: top
+}
+
+#repo{
+    float: bottom;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
+}

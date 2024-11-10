@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="project-template-styles.css"/>
+        <script type="text/javascript" src="projects.js"></script>
+        <title>vrpst | Flink</title>
+    </head>
+    <body>
+        <div class="main-content">
+            <div class="title">
+                <h1>Flink</h1>
+            </div>
+                <div class="right-elements">
+                    <div class="infobox">
+                        <p id="infobox-title"><i><b>Flink</b></i></p>
+                        <img src="../flink.png" id="infobox-photo">
+                        <div id="infobox-content">
+                            <ul id="infobox-labels">
+                                <li class="nodot"><b>Status</b></li>
+                                <li class="nodot"><b>Development period</b></li>
+                                <li class="nodot"><b>Language</b></li>
+                                <li class="nodot"><b>Public repo?</b></li>
+                            </ul>
+                            <ul id="infobox-data">
+                                <li class="nodot">Ongoing</li>
+                                <li class="nodot">August 2024–present</li>
+                                <li class="nodot">Python</li>
+                                <li class="nodot">No</li>
+                            </ul>
+                        </div>
+                    </div>
+                        <div class="infobox">
+                            <div id="skills">
+                                <h2>Technical features:</h2>
+                                <ul class="skills-used">
+                                    <li>Object-oriented game design</li>
+                                    <li>Complex string pattern matching and substitution</li>
+                                    <li>Interface design with <code>pygame</code></li>
+                                    <li>Multithreading*</li>
+                                    <li>Internet interactions with <code>requests</code>*</li>
+                                    <li>REST API use*</li>
+                                    <li>JSON parsing*</li>
+                                </ul>
+                                <p>Technical aspects new to me in this project are marked with an asterisk.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="info">
+                <p class="info-text">Flink (a contraction of <b>f</b>irst <b>link</b>) is a single-player trivia game, where a user is given a random
+                Wikipedia article. They are given the article's first sentence, and have to continually guess what the first hyperlink on
+                the page. They then repeat this on the article they guess, and keep going until they reach one of the ten
+                "<a href="https://en.wikipedia.org/wiki/Wikipedia:Vital_articles/Level/1">Vital Articles</a>".<br><br>
+                As an example, the
+                first link on the page <i><a href="https://en.wikipedia.org/wiki/HTML">HTML</a></i> is 
+                <i><a href="https://en.wikipedia.org/wiki/Markup_language">markup language</a></i>, and the first link on that article is
+                <i><a href="https://en.wikipedia.org/wiki/Code">code</a></i> (displayed as "text-encoding system"; either would be a valid guess).
+                The game gives you the first sentence of the article as a hint: reusing our <i>HTML</i> example, the game would give it to you
+                as "Hypertext Markup Language (HTML) is the standard ______ ________ for documents designed to be displayed in a web browser."
+                Various other hints (e.g. revealing all the vowels in a link) are available to help you guess correctly.<br><br>
+                The game is currently solely a desktop Python game, but I hope to be able to turn it into a web game, once my JavaScript skills are sufficient.
+                </p><br>
+                <h2>Technical overview</h2>
+                <p class="info-text">The path to get from the starting article to the finishing one is found by querying the Wikimedia API for the starting page's
+                    text, running it through a parser algorithm to find the first link, and repeating this recusively until one of the Vital 
+                    Articles is reached, or the path loops (i.e. article A's first link is article B, and article B's first link is article A).
+                    At the same time as the first link is found in the page text, the parser also finds and formats the first sentence of the article.
+                    All API queries and parsing is carried out on a loading screen, before the game begins.<br><br>
+                    The parser makes up the bulk of the project's backend. I wrote it before I knew regex to any usable capacity, so it makes use of
+                    native Python string-matching techniques. This includes filtering templates, citations/references, and wikitext
+                    bold/italic/underline syntax. Finding the first link is generally straightforward—find the first word enclosed in double square
+                    brackets ("[[example]]") <i>not</i> in a template or reference.
+                    Finding and accurately fixing the first sentence is made much more complicated by the many different ways a full stop/period can
+                    be used, as well as natural variations in formatting that occur when humans write text. I would estimate that the sentence parsing
+                    has around a 95% success rate, so it is (infuriatingly!) not perfect.<br><br>
+                    The frontend is written using the Pygame library and involved using it to much greater depth than I had ever done previously. 
+                    The entire interface is inside a big while loop, with a status variable shifting between the game states (loading, running, end) and the 
+                    different screens (home, howtoplay, about, game). Pygame does not have native button support, and I had to write classes to function 
+                    as button objects from scratch, as well as creating my own text input functionality. The loading screen makes use of multithreading 
+                    to maintain the animations while the backend makes and parses the API calls; if the loading screen froze, it might give the impression 
+                    that the game is crashing.<br>
+                </p>
+            </div>
+        </div>
+</html>

@@ -67,14 +67,14 @@ ul{
     height: 120px;
     filter: opacity(0%);
     width: 95%;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .navbar-container:hover{
     height: 120px;
     filter: opacity(100%);
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .navbaritem{

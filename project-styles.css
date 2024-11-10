@@ -57,6 +57,7 @@ a:visited{
 
 .projectbox-left{
     margin-right: 1%;
+    transition: all 0.25s ease;
 }
 
 .projectbox-left:hover{
@@ -67,6 +68,7 @@ a:visited{
 
 .projectbox-right{
     margin-left: 1%;
+    transition: all 0.25s ease;
 }
 
 .projectbox-right:hover{
@@ -108,14 +110,14 @@ a:visited{
     height: 120px;
     filter: opacity(0%);
     width: 95%;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .navbar-container:hover{
     height: 120px;
     filter: opacity(100%);
     width: 100%;
-    transition: all 0.5s;
+    transition: all 0.5s ease-out;
 }
 
 .navbaritem{

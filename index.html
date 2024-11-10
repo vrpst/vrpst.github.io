@@ -2,40 +2,37 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="main-styles.css"/>
-        <title>About me</title>
+        <title>vrpst | About</title>
     </head>
     <body>
-        <div class="sidebar">
-            <div id="sidebar-btn">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg">
-            </div>
-            <div class="sidebar-list">
-                <ul class="sidebar-list-items">
-                    <li><p>About<p></li>
-                    <li><p><a href="projects.html">Projects</a></p></li>
-                    <li><p>Plaza</p></li>
-                    <li><p>Flink</p></li>
-                </ul>
+        <div class="navbar-container">
+            <div class="navbar">
+                <div class="navbaritem">
+                    <a href="index.html" class="navbarlink">About</a>
+                </div>
+                <div class="navbaritem">
+                    <a href="projects.html" class="navbarlink">Projects</a>
+                </div>
             </div>
         </div>
-        <div class="pagetitle">
-            <h1>Hello, I'm Lucas.</h1>
-        </div>
+        <img src="hex.png" class="navbar-icon">
         <div class="centretext">
-            <div id="intro">
-                <h2>In brief:</h2>
-                <ul>
-                    <li>I'm a first-year computer science student at Durham.</li>
-                    <li>This is my first meaningful attempt at working with HTML and CSS.</li>
-                    <li>I have a fair amount of experience using Python; my next project is hopefully going to be converting a game I made with it to work on the web.</li>
-                    <li>I still have no idea when "Computer Science" is capitalized or not. Everyone I've asked gives a different answer.</li>
-                    <li>Dark chocolate rules.</li>
-                </ul>
-                <p>I have a very small internet presence, but <a href="https://github.com/vrpst"> I do use GitHub.</a>
-            </div>
             <div id="theo">
                 <img src="theo.jpg" id="theo-img">
-                <p id="theo-caption">Theo, desk hermit and my keyboard's biggest fan.</p>
+                <p id="theo-caption">Theo, desk hermit and resident keyboard warmer.</p>
+            </div>
+            <h1>Hello, I'm <span id="name">Lucas</span>.</h1>
+            <div id="intro">
+                <h2>About me:</h2>
+                <ul>
+                    <li>I'm a first-year computer science student at Durham.</li>
+                    <li>This is my first meaningful attempt at web development.</li>
+                    <li>On that note, every character of code used to build this website was written by me. This is a raw demonstration of my HTML/CSS/JS abilities, without any templates or packages.</li>
+                    <li>I am proficient in Python; I have particular experience in working with web APIs & JSON, the Pandas library, and building interfaces (Tkinter & pygame).</li>
+                    <li>I still have no idea when "Computer Science" is capitalized or not. Everyone I've asked gives a different answer. ¯\_(ツ)_/¯</li>
+                    <li>Dark chocolate rules.</li>
+                </ul>
+                <p>I have a minimal internet presence, but <a href="https://github.com/vrpst"> I do use GitHub.</a>
             </div>
         </div>
         <div id="repo">

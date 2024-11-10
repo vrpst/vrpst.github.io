@@ -1,6 +1,6 @@
 html{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
-    background-color: #002727; /*#6f9076;*/
+    background-color: #002730; /*#6f9076;*/
     font-size: 10;
     color: #EEEEEE;
     background-image: url(octo.png);
@@ -9,10 +9,13 @@ html{
     background-repeat: repeat;
 }
 
+body{
+    margin: 0;
+}
 
 h1{
-    font-size: 60px;
-    margin-top: 40px;
+    font-size: 80px;
+    margin-top: 0;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -22,51 +25,22 @@ h2{
     font-size: 24px;
 }
 
-.sidebar{
-    position: fixed;
-    margin: 0;
-    padding: 1rem;
-    background-color: rgba(0, 11, 11, 0);
-    transition: all 0.5s ease;
-    width: 0%;
-    height: 50%;
+a:visited{
+    color: #EEEEEE;
 }
 
-.sidebar:hover{
-    width: 10%;
-    background-color: rgba(0, 22, 22, 0.7);
-    transition: all 0.5s ease;
-}
-
-.sidebar-list{
+#title{
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    overflow: hidden;
-    display: none;
-}
-
-.sidebar:hover .sidebar-list{
-    display: block;
-}
-
-.sidebar-list-items{
-    list-style-type: none;
-    line-height: 30px;
-    padding-left: 0;
-}
-
-.pagetitle{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
-    text-align: center;
-    width: 40%;
+    margin-bottom: 5%;
+    width: 70%;
 }
 
 .centretext{  /* make text and image next to each other */
     margin-left: auto;
     margin-right: auto;
+    margin-top: 5%;
     width: 60%;
     float: top
 }
@@ -78,15 +52,27 @@ h2{
     width: 40%;
     border-radius: 10px;
     margin-bottom: 20px;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
 }
 
 .projectbox-left{
-    margin-right: 10px;
+    margin-right: 1%;
+}
+
+.projectbox-left:hover{
+    margin-right: 1%;
+    background-color: #103740;
+    transition: all 0.25s ease;
 }
 
 .projectbox-right{
-    margin-left: 10px;
+    margin-left: 1%;
+}
+
+.projectbox-right:hover{
+    margin-left: 1%;
+    background-color: #103740;
+    transition: all 0.25s ease;
 }
 
 #projectboxgrid{
@@ -97,4 +83,49 @@ h2{
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap ;
+}
+
+/* nav */
+
+.navbar-icon{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 25px;
+}
+.navbar{
+    height: 35px;
+    background-color: #002028;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.navbar-container{
+    height: 120px;
+    filter: opacity(0%);
+    width: 95%;
+    transition: all 0.5s;
+}
+
+.navbar-container:hover{
+    height: 120px;
+    filter: opacity(100%);
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.navbaritem{
+    padding-left: 1%;
+    padding-right: 1%;
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+.navbarlink{
+    text-decoration: none;
 }

@@ -11,12 +11,13 @@ html{
 
 body{
     margin: 0;
+    margin-top: 10%;
 }
 
 h1{
     font-family: "Trebuchet MS";
     font-size: 80px;
-    margin-top: 0;
+    margin-top: 40px;
     margin-bottom: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -26,70 +27,31 @@ h2{
     font-size: 24px;
 }
 
+a{
+    color: #EEEEEE
+}
+
 a:visited{
     color: #EEEEEE;
 }
 
-#title{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5%;
-    width: 70%;
+ul{
+    line-height: 1.5;
+}
+
+.pages{
+    font-size: 56px;
 }
 
 .centretext{  /* make text and image next to each other */
+    margin-top: 5%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
-    width: 60%;
+    width: 80%;
     float: top
 }
 
-.projectbox{
-    border-style: solid;
-    border-width: 1px;
-    padding: 20px;
-    width: 40%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(4px);
-}
-
-.projectbox-left{
-    margin-right: 1%;
-    transition: all 0.25s ease;
-}
-
-.projectbox-left:hover{
-    margin-right: 1%;
-    background-color: #103740;
-    transition: all 0.25s ease;
-}
-
-.projectbox-right{
-    margin-left: 1%;
-    transition: all 0.25s ease;
-}
-
-.projectbox-right:hover{
-    margin-left: 1%;
-    background-color: #103740;
-    transition: all 0.25s ease;
-}
-
-#projectboxgrid{
-    padding: 0;
-    width: 70%;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap ;
-}
-
 /* nav */
-
 .navbar-icon{
     position: absolute;
     top: 5px;
@@ -131,4 +93,48 @@ a:visited{
 
 .navbarlink{
     text-decoration: none;
+}
+
+#name{
+    color:#aaffee;
+}
+
+#intro{
+    float: left;
+    padding: 12px;
+    width: 75%;
+    max-width: 60%;
+}
+
+#theo{
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    top: 30px;
+    width: 20%
+}
+
+#theo-img{
+    float: top;
+    width: 90%;
+    border: 1px solid #000000;
+
+}
+
+#theo-caption{
+    font-size: 13px;
+    font-style: italic;
+    clear: both;
+    float: top
+}
+
+#repo{
+    float: bottom;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-size: 12px;
+    text-align: center;
+    clear: both;
 }

@@ -14,12 +14,11 @@ body{
 }
 
 h1{
-    font-family: 'Trebuchet MS';
-    font-size: 80px;
-    margin-top: 40px;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    font-family: "Trebuchet MS";
+    font-size: 90px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10%;
 }
 
 h2{
@@ -27,67 +26,38 @@ h2{
 }
 
 a{
-    color: #EEEEEE
+    color: #EEEEEE;
 }
 
 a:visited{
     color: #EEEEEE;
 }
 
-ul{
+li{
+    padding: none;
     line-height: 1.5;
 }
 
-.centretext{  /* make text and image next to each other */
-    margin-top: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-    float: top
-}
-
-/* nav */
-.navbar-icon{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 25px;
-}
-.navbar{
-    height: 35px;
-    background-color: #002028;
-    display: flex;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.navbar-container{
-    height: 120px;
-    filter: opacity(0%);
-    width: 95%;
-    transition: all 0.5s ease-out;
-}
-
-.navbar-container:hover{
-    height: 120px;
-    filter: opacity(100%);
-    width: 100%;
-    transition: all 0.5s ease-out;
-}
-
-.navbaritem{
-    padding-left: 1%;
-    padding-right: 1%;
-    display: flex;
-    align-self: center;
-    text-align: center;
-}
-
-.navbarlink{
+.nounderline{
     text-decoration: none;
+}
+
+.pages{
+    font-size: 50px;
+    width: fit-content;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.pages:hover{
+    font-size: 50px;
+    background-color: #22484F;
+    transition: all 0.5s;
+}
+
+.me{
+    margin-top: 10%;
+    margin-bottom: 40px;
 }
 
 #name{
@@ -99,28 +69,6 @@ ul{
     padding: 12px;
     width: 75%;
     max-width: 60%;
-}
-
-#theo{
-    float: right;
-    margin-left: 10px;
-    position: relative;
-    top: 30px;
-    width: 20%
-}
-
-#theo-img{
-    float: top;
-    width: 90%;
-    border: 1px solid #000000;
-
-}
-
-#theo-caption{
-    font-size: 13px;
-    font-style: italic;
-    clear: both;
-    float: top
 }
 
 #repo{

@@ -44,18 +44,8 @@ ul{
     padding: 0;
 }
 
-.nodot{
-    list-style: none;
-    line-height: 2.5;
-}
-
 .info-text{
     max-width: 50%;
-}
-
-.skills-used{
-    line-height: 1.5;
-    padding-left: 20px;
 }
 
 .title{
@@ -77,49 +67,4 @@ code{
     line-height: 2.5;
     width: 25%;
     margin-right: 5%;
-}
-
-.infobox{
-    border: #FFFFFF;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 10%;
-    padding: 10px;
-    backdrop-filter: blur(3px);
-}
-
-#infobox-content{
-    display: flex;
-    margin: auto;
-    overflow: hidden;
-    width: 90%;
-
-}
-
-#infobox-labels{
-    width: fit-content;
-    white-space: nowrap;
-    overflow:  hidden;
-    padding-right: 10%;
-}
-
-#infobox-data{
-    padding-left: 10%;
-    white-space: nowrap;
-}
-
-#infobox-photo{
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-}
-
-#infobox-title{
-    font-size: 40px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-    margin-bottom: 5%;
 }

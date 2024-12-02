@@ -4,7 +4,7 @@ window.onload = function(){
         window.location.href = "./projects/flink.html";
     });
 
-    // plaza
+    /*// plaza
     document.querySelector('#plaza').addEventListener('click', function() {
         window.location.href = "./projects/plaza.html";
     });
@@ -12,5 +12,5 @@ window.onload = function(){
     // sudoku
     document.querySelector('#sudoku').addEventListener('click', function() {
         window.location.href = "./projects/sudoku.html";
-    });
+    });*/
 }

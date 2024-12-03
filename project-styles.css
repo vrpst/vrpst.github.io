@@ -48,88 +48,67 @@ a:visited{
 }
 
 .projectbox{
+    display: inline-table;
     border-style: solid;
     border-width: 1px;
-    padding: 20px;
-    width: 40%;
+    padding: 2.5vh;
+    width: 40vh;
+    height: 20vh;
     border-radius: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     backdrop-filter: blur(4px);
 }
 
 .projectbox-left{
-    margin-right: 1%;
-    transition: all 0.25s ease;
+    margin-right: 25vh;
+    opacity: 0;
 }
 
-.projectbox-left:hover{
-    margin-right: 1%;
+.projectbox-left-transitioned{
+    margin-right: 1vh;
+    transition: all 1s ease;
+    opacity: 100;
+}
+
+.projectbox-left-transitioned:hover{
+    margin-right: 1vh;
     background-color: #103740;
     transition: all 0.25s ease;
 }
 
 .projectbox-right{
-    margin-left: 1%;
-    transition: all 0.25s ease;
+    margin-left: 25vh;
+    opacity: 0;
 }
 
-.projectbox-right:hover{
-    margin-left: 1%;
+.projectbox-right-transitioned{
+    margin-left: 1vh;
+    transition: all 1s ease;
+    opacity: 100;
+}
+
+.projectbox-right-transitioned:hover{
+    margin-left: 1vh;
     background-color: #103740;
     transition: all 0.25s ease;
 }
 
-#projectboxgrid{
-    padding: 0;
-    width: 70%;
-    margin-inline: auto;
-    display: flex;
+.projectboxgrid{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    /*display: flex;
     flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap ;
+    flex-wrap: wrap ;*/
 }
 
-/* nav */
-
-.navbar-icon{
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 25px;
-}
-.navbar{
-    height: 35px;
-    background-color: #002028;
-    display: flex;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-.navbar-container{
-    height: 120px;
-    filter: opacity(0%);
-    width: 95%;
-    transition: all 0.5s ease-out;
-}
-
-.navbar-container:hover{
-    height: 120px;
-    filter: opacity(100%);
-    width: 100%;
-    transition: all 0.5s ease-out;
-}
-
-.navbaritem{
-    padding-left: 1%;
-    padding-right: 1%;
-    display: flex;
-    align-self: center;
-    text-align: center;
-}
-
-.navbarlink{
-    text-decoration: none;
+.projectboxgrid-transitioned{
+    margin-left: auto;
+    margin-right: auto;
+    width: 94vh;
+    /*display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap ;*/
 }

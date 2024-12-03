@@ -14,3 +14,13 @@ window.onload = function(){
         window.location.href = "./projects/sudoku.html";
     });*/
 }
+
+// TRANSITIONS IN
+window.setTimeout(function() {
+    document.getElementById('flink').className += '-transitioned'
+    document.getElementById('plaza').className += '-transitioned'
+    }, 200)
+window.setTimeout(function() {
+    document.getElementById('csom').className += '-transitioned'
+    document.getElementById('sudoku').className += '-transitioned'    
+    }, 200)

@@ -1,16 +1,43 @@
 html{
     font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
-    background-color: #001720; /*#6f9076;*/
-    font-size: 10;
+    background-color: #001520;
     color: #EEEEEE;
-    background-image: url(octo.png);
+    background-image: url(./resources/octo.png);
+    background-attachment: fixed;
     background-size: 5%;
     background-position: top left;
     background-repeat: repeat;
+    transition: all 0.5s ease;
+
 }
 
-h2{
-    font-size: 24px;
+button{
+    background-color: inherit;
+    border-radius: 8px;
+    border-width: 1px;
+    padding: 5px;
+    color: #EEEEEE;
+    font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    max-width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding: 2%;
+}
+
+h3{
+    font-size: 30px;
+}
+
+p{
+    overflow-wrap: break-word;
+    font-size: 11;
+}
+
+code{
+    font-size: 16px;
 }
 
 a{
@@ -18,50 +45,31 @@ a{
 }
 
 a:visited{
-    color: #EEEEEE;
+    color: inherit;
 }
 
 li{
+    width: fit-content;
     padding: none;
-    line-height: 1.5;
+    line-height: 2;
+}
+
+.white{
+    color: #EEEEEE;
+    transition: all 0.5s ease;
 }
 
 .nounderline{
     text-decoration: none;
 }
 
-.pages{
-    font-size: 50px;
-    width: fit-content;
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: -25vh;
-}
-
 .me{
     font-family: "Trebuchet MS";
-    font-size: 90px;
+    font-size: 80px;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-top: 10%;
     margin-bottom: 40px;
-    margin-left: -90vh;
-}
-
-.faded-in-left{
-    display: block;
-    margin-left: 10%;
-    transition: all 0.5s;
-}
-
-.me-fade{
-    transition: all 0.6s ease-out;
-}
-
-.pages:hover{
-    font-size: 50px;
-    background-color: #22484F;
-    transition: all 0.5s;
 }
 
 #name{
@@ -69,9 +77,73 @@ li{
 }
 
 #repo{
-    margin-top: 40vh;
+    margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
     font-size: 12px;
     text-align: center;
+}
+
+#theo{
+    width: 20%;
+    position: relative;
+    float: right;
+}
+
+#theo-img{
+    height: 30vh;
+    top: 30px;
+}
+
+#theo-caption{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: break-word;
+    font-size: 13px;
+    font-style: italic;
+}
+
+
+/* THEME 2*/
+.html-theme2{
+    color: #000000;
+    background-color: #FFFFFF;
+    background-image: none;
+    transition: all 0.5s ease;
+}
+
+.links-theme2{
+    color: #000000;
+    transition: all 0.5s ease;
+}
+
+.hide{
+    display: none;
+}
+
+/* WOBBLE */
+@keyframes wobble {
+    0% {translate: 0 0; rotate: 0.3deg;}
+    12% {translate: -10px 5px; rotate: -0.2deg}
+    25% {translate: 12px -10px; rotate: 0deg}
+    37% {translate: -3px 4px; rotate: -0.3deg}
+    50% {translate: 0 0; rotate: 0.2deg}
+    62% {translate: -5px -10px; rotate: -0.1deg;}
+    75% {translate: 10px 8px; rotate: 0.4deg;}
+    87% {translate: 0px -5px; rotate: -0.2deg;}
+    100% {translate: 0 0; rotate: 0deg;}
+}
+
+.wobble{
+    animation-name: wobble;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+}
+
+/* AUSTRALIAN */
+
+.australian{
+    rotate: 180deg;
+    transition: all 0.5s;
 }

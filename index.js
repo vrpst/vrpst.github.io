@@ -1,35 +1,3 @@
-let theme = 'dark'
-
-function invertTheme(){
-    console.log("clicked")
-    console.log(theme, "start")
-    if (theme == 'dark'){
-        document.getElementsByTagName('html')[0].classList.add('html-theme2')
-        document.getElementById('html').classList.add('hide')
-        let links = document.getElementsByTagName('a')
-        for (let i=0; i<links.length; i++){
-            links[i].classList.remove('white')
-            links[i].classList.add('links-theme2')
-        }
-        document.getElementById('name').style.color = '#0058A2'
-        theme = 'light'
-    }
-    else if (theme == 'light'){
-            document.getElementsByTagName('html')[0].classList.remove('html-theme2')
-            document.getElementById('html').classList.remove('hide')
-            let links = document.getElementsByTagName('a')
-            for (let i=0; i<links.length; i++){
-                links[i].classList.add('white')
-                links[i].classList.remove('links-theme2')
-            }
-            document.getElementById('name').style.color = '#aaffee'
-            theme = 'dark'
-    }
-    else{
-        console.log("wtaf")
-    }
-}
-
 function changeBackground(){
     let color = '#' 
     + Math.round(Math.random()*255).toString(16)

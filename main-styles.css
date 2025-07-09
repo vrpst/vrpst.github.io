@@ -1,12 +1,12 @@
 html{
     font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
-    background-color: #001520;
-    color: #EEEEEE;
-    background-image: url(./resources/octo.png);
+    background-color: #dadbdb;
+    color: #001520;
+    /*background-image: url(./resources/octo.png);
     background-attachment: fixed;
-    background-size: 5%;
+    background-size: 4%;
     background-position: top left;
-    background-repeat: repeat;
+    background-repeat: repeat;*/
     transition: all 0.5s ease;
 
 }
@@ -16,7 +16,7 @@ button{
     border-radius: 8px;
     border-width: 1px;
     padding: 5px;
-    color: #EEEEEE;
+    color: #000000;
     font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -41,7 +41,7 @@ code{
 }
 
 a{
-    color: #EEEEEE;
+    color: #000000;
 }
 
 a:visited{
@@ -51,11 +51,19 @@ a:visited{
 li{
     width: fit-content;
     padding: none;
-    line-height: 2;
+    line-height: 1.5;
+}
+
+#columns{
+    align-items: flex-start; /* HOW THE HELL DO I MAKE COLUMNS AGAIN */
+}
+
+#about{
+    margin-right: 15vw;
 }
 
 .white{
-    color: #EEEEEE;
+    color: #000000;
     transition: all 0.5s ease;
 }
 
@@ -73,7 +81,7 @@ li{
 }
 
 #name{
-    color:#aaffee;
+    color:#3f6085;
 }
 
 #repo{
@@ -102,24 +110,6 @@ li{
     overflow-wrap: break-word;
     font-size: 13px;
     font-style: italic;
-}
-
-
-/* THEME 2*/
-.html-theme2{
-    color: #000000;
-    background-color: #FFFFFF;
-    background-image: none;
-    transition: all 0.5s ease;
-}
-
-.links-theme2{
-    color: #000000;
-    transition: all 0.5s ease;
-}
-
-.hide{
-    display: none;
 }
 
 /* WOBBLE */

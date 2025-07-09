@@ -7,6 +7,7 @@
     </head>
     <body>
         <h1 class="me" id="intro">Hello, I'm <span id="name">Lucas</span>.</h1>
+        <img src="burd.png" id="theo">
         <div id="about">
             <h3><a href="#about" class="nounderline white">About</a></h3>
             <p>
@@ -41,29 +42,29 @@
                 </li>-->
             </ul>
         </div><br>
-        <h3><a href="#setup" class="nounderline white">My setup</a></h3>
-        <div id="theo">
-            <img src="./resources/theo.jpg" id="theo-img">
-            <p id="theo-caption">Theo, desk hermit and resident keyboard warmer</p>
-        </div>
-        <ul>
-            <li>Laptop: Lenovo T14 Gen 5</li>
-            <li>CPU: AMD Ryzen 7 8840U</li>
-            <li>RAM: 32 GB DDR5</li>
-            <li>GPU: potato</li>
-            <li>SSD: 1TB</li>
-            <li>OS: Ubuntu Linux (XFCE, dotfiles TBA)</li>
-            <li>IDE: Visual Studio Code</li>
-        </ul>
-        <div id="random-stuff">
-            <h3><a href="#random" class="nounderline white">Other things</a></h3>
-            <p>Matters of terrific importance.</p>
-            <ul>
-                <li onclick="changeBackground()" id="background-button" style="text-decoration: underline;">Randomise the background color.</li>
-                <li onclick="australian()" id="australian-button" style="text-decoration: underline;">View the Australian version.</li>
-                <li onclick="wobble()" id="wobble-button" style="text-decoration: underline;">Make it wobble.</li>
-                <li onclick="teleport()" id="teleport-button" style="text-decoration: underline;">Make it teleport.</li>
-            </ul>
+        <div id="columns">
+            <div id="setup">
+                <h3><a href="#setup" class="nounderline white">My setup</a></h3>
+                <ul>
+                    <li>Laptop: Lenovo T14 Gen 5</li>
+                    <li>CPU: AMD Ryzen 7 8840U</li>
+                    <li>RAM: 32 GB DDR5</li>
+                    <li>GPU: potato</li>
+                    <li>SSD: 1TB</li>
+                    <li>OS: Ubuntu Linux (XFCE, dotfiles TBA)</li>
+                    <li>IDE: Visual Studio Code</li>
+                </ul>
+            </div>
+            <div id="random-stuff">
+                <h3><a href="#random" class="nounderline white">Other things</a></h3>
+                <p>Matters of terrific importance.</p>
+                <ul>
+                    <li onclick="changeBackground()" id="background-button" style="text-decoration: underline;">Randomise the background color.</li>
+                    <li onclick="australian()" id="australian-button" style="text-decoration: underline;">View the Australian version.</li>
+                    <li onclick="wobble()" id="wobble-button" style="text-decoration: underline;">Make it wobble.</li>
+                    <li onclick="teleport()" id="teleport-button" style="text-decoration: underline;">Make it teleport.</li>
+                </ul>
+            </div>
         </div>
         <div id="repo">
             <footer><p><a href="https://github.com/vrpst/vrpst.github.io" class="white">The respository</a>  for this website is public.</p></footer>

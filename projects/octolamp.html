@@ -18,13 +18,29 @@
                 It uses the <a href="https://openlayers.org/">OpenLayers</a> JavaScript library in conjunction with the Office for National Statistics'
                 <a href="https://www.data.gov.uk/search?q=Local+Authority+Districts+%28December&filters%5Bpublisher%5D=Office+for+National+Statistics&filters%5Btopic%5D=&filters%5Bformat%5D=GEOJSON&sort=best">
                 GeoJSON data of local authority boundaries</a>
-                 to render a vector map of all UK district councils and unitary authorities, which are then colored in using a JavaScript function.
+                 to render three vector maps of different tiers of UK local government authorities, which are then colored in using a JavaScript function that runs on the results data.
+                 The GeoJSON data uses different EPSG projections depending on when it was released, so I created <a href="https://github.com/vrpst/espg-converter">a converter</a> to handle this.
                 A box in the top right shows a chart (via <a href="https://www.chartjs.org/">ChartJS</a>) and a table with more information on the selected election result.
                 <br><br>
-                The data visualised is made up of a series of JSON files. These are generated from datasets compiled by the House of Commons Library. The HOCL provides
-                these datasets in the CSV format—I wrote a series of Python scripts to convert the data into the JSON that Octolamp uses. These scripts
-                are available in the respository; I have had to omit the JSON files themselves for storage reasons.
+                The results data visualised is made up of a series of JSON files. These are generated from datasets compiled by the House of Commons Library. The HOCL provides
+                these datasets in the CSV format—I wrote a series of Python scripts to convert the data into the JSON that Octolamp uses.
             </p>
+            <p>Results for the following elections are viewable:</p>
+            <ul>
+                <li>2016–2025 elections to unitary authorities, district councils, county councils, metropolitan and London boroughs, and Scottish and Welsh unitaries</li>
+                <li>2021–2024 elections to district councils and unitary authorities broken down by ward</li>
+            </ul>
+            <p>Views available:</p>
+            <ul>
+                <li>Color area by control</li>
+                <li>Color area by plurality (largest party)</li>
+                <li>Color area by party that made the largest gain of seats</li>
+                <li>Color area by party that had the largest loss of seats</li>
+                <li>Filter areas to see the control of all councils in a given year (no filter)</li>
+                <li>Filter areas to see only those up for election in a given year</li>
+                <li>Filter areas to see only those which changed from one party's control to another</li>
+                <li>Filter areas to see only those which changed control (including to no overall control)</li>
+            </ul>
             <h3>Screenshot</h3>
             <div class="center">
                 <img src="../resources/octolamp.png" width="100%">

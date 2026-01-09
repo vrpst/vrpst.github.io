@@ -2,22 +2,8 @@ html{
     font-family: 'Verdana', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'Arial', 'sans-serif';
     background-color: #dadbdb;
     color: #001520;
-    /*background-image: url(./resources/octo.png);
-    background-attachment: fixed;
-    background-size: 4%;
-    background-position: top left;
-    background-repeat: repeat;*/
     transition: all 0.5s ease;
 
-}
-
-button{
-    background-color: inherit;
-    border-radius: 8px;
-    border-width: 1px;
-    padding: 5px;
-    color: #000000;
-    font-family: 'Helvetica', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body{
@@ -29,6 +15,7 @@ body{
 
 h3{
     font-size: 30px;
+    margin-bottom: 0px;
 }
 
 p{
@@ -36,9 +23,6 @@ p{
     font-size: 11;
 }
 
-code{
-    font-size: 16px;
-}
 
 a{
     color: #000000;
@@ -54,8 +38,15 @@ li{
     line-height: 1.5;
 }
 
-#columns{
-    align-items: flex-start; /* HOW THE HELL DO I MAKE COLUMNS AGAIN */
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: left;
 }
 
 #about{
@@ -98,20 +89,6 @@ li{
     float: right;
 }
 
-#theo-img{
-    height: 30vh;
-    top: 30px;
-}
-
-#theo-caption{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    overflow-wrap: break-word;
-    font-size: 13px;
-    font-style: italic;
-}
-
 /* WOBBLE */
 @keyframes wobble {
     0% {translate: 0 0; rotate: 0.3deg;}
@@ -132,7 +109,6 @@ li{
 }
 
 /* AUSTRALIAN */
-
 .australian{
     rotate: 180deg;
     transition: all 0.5s;

@@ -1,23 +1,3 @@
-function changeBackground(){
-    let color = '#' 
-    + Math.round(Math.random()*255).toString(16)
-    + Math.round(Math.random()*255).toString(16)
-    + Math.round(Math.random()*255).toString(16)
-    while (color.length != 7){
-        console.log(color.length)
-        color = color + "0"
-    }
-    document.getElementsByTagName('html')[0] .style.backgroundColor = color
-    document.getElementById('background-button').setAttribute('onclick', 'resetBackground()')
-    document.getElementById('background-button').innerText = "Reset the background color."
-}
-
-function resetBackground(){
-    document.getElementsByTagName('html')[0].removeAttribute('style')
-    document.getElementById('background-button').setAttribute('onclick', 'changeBackground()')
-    document.getElementById('background-button').innerText = "Randomise the background color."
-}
-
 function wobble(){
     const html = document.getElementsByTagName('html')[0]
     html.classList.add('wobble')
@@ -53,7 +33,7 @@ function stopAustralian(){
 
 function teleport(){
     const teleport_button = document.getElementById('teleport-button')
-    const coords = [Math.floor(20+60*Math.random()), Math.floor(20+60*Math.random())]
+    const coords = [Math.floor(20+60*Math.random()), Math.floor(20+30*Math.random())]
     const button_pos = "text-decoration: underline; position: fixed; bottom: "
                      + coords[1].toString() + "dvh; left: " + coords[0].toString() + "dvw;"
     teleport_button.style = button_pos

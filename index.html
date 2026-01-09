@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="main-styles.css"/>
+        <link rel="stylesheet" type="text/css" href="index.css"/>
         <title>vrpst | About</title>
         <script src="index.js"></script>
     </head>
     <body>
         <h1 class="me" id="intro">Hello, I'm <span id="name">Lucas</span>.</h1>
-        <img src="burd.png" id="theo">
+        <img src="./resources/burd.png" id="theo">
         <div id="about">
             <h3><a href="#about" class="nounderline white">About</a></h3>
             <p>
@@ -17,58 +17,85 @@
             </p>
             <p>
                 Most of my work—including day-to-day scripting, side projects, and university coursework—is written in Python,
-                which is my strongest language. I also have knowledge of HTML/CSS/JavaScript and some Bash scripting. I'm currently working on a
-                project called <i>Octolamp</i>—you can read more about it using the link below.
+                which is my strongest language. I also have knowledge of HTML/CSS/JavaScript and shell scripting. I'm currently working on a
+                set of simulation tools for my university's spaceflight society. They aren't public, but you can check out the links below for
+                some of my work that is.
             <p>
                 My internet presence is minimal, but I do have <a href="https://github.com/vrpst/" class="white">a GitHub account</a> (evidently, I guess), and 
                 a <a href="https://www.linkedin.com/in/lucas-verpoest/" class="white">LinkedIn profile</a>.
             </p>
-        </div><br>
+        </div>
         <div id="projects">
             <h3><a href="#projects" class="nounderline white">Projects</a></h3>
-            <p>Each project links to its own page on this website with a brief explanation of what it does and how.
-                Some projects (not all) have public repositories;
-                those that do have them linked from the project page.
-            </p>
-            <ul>
-                <li><a href="projects/octolamp.html" class="white"><b>Octolamp</b></a>:
-                    an interactive map visualising United Kingdom local election data.
-                </li>
-                <li><a href="projects/flink.html" class="white"><b>Flink</b></a>:
-                    a desktop game based around guessing the first link in a random Wikipedia article.
-                </li>
-                <!--<li><b>RolyPoly</b>:&ensp;
-                    a simple polling website using client-server architecture.  
-                </li>
-                <li><b>Sudoklue</b>:&ensp;
-                    hmm hmm hmm
-                </li>-->
-            </ul>
-        </div><br>
-        <div id="columns">
-            <div id="setup">
-                <h3><a href="#setup" class="nounderline white">My setup</a></h3>
-                <ul>
-                    <li>Laptop: Lenovo T14 Gen 5</li>
-                    <li>CPU: AMD Ryzen 7 8840U</li>
-                    <li>RAM: 32 GB DDR5</li>
-                    <li>GPU: potato</li>
-                    <li>SSD: 1TB</li>
-                    <li>OS: Ubuntu Linux (XFCE, dotfiles TBA)</li>
-                    <li>IDE: Visual Studio Code</li>
-                </ul>
-            </div>
-            <div id="random-stuff">
-                <h3><a href="#random" class="nounderline white">Other things</a></h3>
-                <p>Matters of terrific importance.</p>
-                <ul>
-                    <li onclick="changeBackground()" id="background-button" style="text-decoration: underline;">Randomise the background color.</li>
-                    <li onclick="australian()" id="australian-button" style="text-decoration: underline;">View the Australian version.</li>
-                    <li onclick="wobble()" id="wobble-button" style="text-decoration: underline;">Make it wobble.</li>
-                    <li onclick="teleport()" id="teleport-button" style="text-decoration: underline;">Make it teleport.</li>
-                </ul>
-            </div>
+                <p>This is a table listing most of my projects. Some are much bigger than others—DAWN and Octolamp are the largest by a margin.
+                    Not all projects are public, but those that are have a link to the respository.
+                </p><br>
+                <table>
+                    <tr style="background-color: #BABABA;">
+                        <th>Name</th>
+                        <th>Dates</th>
+                        <th>Description</th>
+                        <th>Language</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td><i>DAWN</i></td>
+                        <td>Q4 2025</td>
+                        <td>A suite of simulation tools for Durham University Spaceflight Society.</td>
+                        <td>Python</td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td><i><a href="https://github.com/vrpst/octolamp">Octolamp</a></i></td>
+                        <td>Q3 2025</td>
+                        <td>An interactive map visualizing UK local election results.</td>
+                        <td>JavaScript, Python</td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td><i><a href="https://github.com/vrpst/birdle">Birdle</a></i></td>
+                        <td>Q3 2025</td>
+                        <td>A minimalist wordle clone that runs in the terminal.</td>
+                        <td>Bash</td>
+                        <td>Personal</td>
+                    </tr>
+                    <tr>
+                        <td><i><a href="https://github.com/vrpst/rolypoly">RolyPoly</a></i></td>
+                        <td>Q1 2025</td>
+                        <td>A simple online polling app; my first web project</td>
+                        <td>JavaScript</td>
+                        <td>Coursework</td>
+                    </tr>
+                    <tr>
+                        <td><i><a href="https://github.com/vrpst/flink">Flink</a></i></td>
+                        <td>Q3 2024</td>
+                        <td>A web game that involves guessing the missing link in a Wikipedia article.</td>
+                        <td>Python</td>
+                        <td>Personal</td>
+                    </tr>
+            </table>
         </div>
+        <div id="setup">
+            <h3><a href="#setup" class="nounderline white">My setup</a></h3>
+            <ul>
+                <li>Laptop: Lenovo T14 Gen 5</li>
+                <li>CPU: AMD Ryzen 7 8840U</li>
+                <li>RAM: 32 GB DDR5</li>
+                <li>GPU: potato</li>
+                <li>SSD: 1TB</li>
+                <li>OS: Arch (hyprland, dotfiles <a href="https://github.com/vrpst/dotfiles">here</a>)</li>
+                <li>IDE: Visual Studio Code, nothing fancy</li>
+            </ul>
+        </div>
+        <div id="random-stuff">
+            <h3><a href="#random" class="nounderline white">Other things</a></h3>
+            <p>Matters of terrific importance.</p>
+            <ul>
+                <li onclick="australian()" id="australian-button" style="text-decoration: underline;">View the Australian version.</li>
+                <li onclick="wobble()" id="wobble-button" style="text-decoration: underline;">Make it wobble.</li>
+                <li onclick="teleport()" id="teleport-button" style="text-decoration: underline;">Make it teleport.</li>
+            </ul>
+            </div>
         <div id="repo">
             <footer><p><a href="https://github.com/vrpst/vrpst.github.io" class="white">The respository</a>  for this website is public.</p></footer>
         </div>
